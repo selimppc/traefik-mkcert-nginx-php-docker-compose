@@ -1,0 +1,10 @@
+[mysqld]
+general_log_file = /custom-logs/mysql/query.log
+general_log      = 1
+
+log_error        = /custom-logs/mysql/mysql_error.log
+
+slow_query_log = 1
+long_query_time = 5
+slow_query_log_file = /custom-logs/mysql/slow-query.log
+log_queries_not_using_indexes

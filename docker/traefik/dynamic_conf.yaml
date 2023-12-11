@@ -1,0 +1,19 @@
+http:
+    routers:
+        traefik:
+            rule: "Host(`horloge-nl.test`, `www.horloge-nl.test`)"
+            service: "api@internal"
+            tls:
+                domains:
+                    - main: "horloge-nl.test"
+                      sans:
+                          - "*.horloge-n l.test"
+                    - main: "domain.local"
+                      sans:
+                          - "*.domain.local"
+
+tls:
+    certificates:
+        - certFile: "/etc/certs/local-cert.pem"
+          keyFile: "/etc/certs/local-key.pem"
+           b        
