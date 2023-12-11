@@ -32,3 +32,8 @@ traefik-mkcert-nginx-php-docker-compose
 
 ## Enjoy using SSL in local environment !
 
+
+## References Gist:
+    1. https://gist.github.com/selimppc/23320f76dfe35e1061add8aab4811abc
+    2. https://gist.github.com/selimppc/1507efc5e611e9f56f36f96fc6bd76ff
+
