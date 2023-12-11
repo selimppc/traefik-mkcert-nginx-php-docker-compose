@@ -1,5 +1,5 @@
 FROM php:8.1.3-fpm-alpine3.15
-LABEL maintainer="Tim Aerdts (INOVA) <tim@teaminova.nl>"
+LABEL maintainer="Selim Reza <selimppc@gmail.com>"
 
 RUN apk update && apk add --no-cache \
     shadow \
