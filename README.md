@@ -17,7 +17,7 @@ traefik-mkcert-nginx-php-docker-compose
 
     Step 1: Create cert dir and install cert and key
     $ mkdir -p certs
-    $ mkcert -cert-file certs/horloge-nl-cert.pem -key-file certs/horloge-nl-key.pem "horloge-nl.test" "*.horloge-nl.test"
+    $ mkcert -cert-file certs/selim-reza-cert.pem -key-file certs/selim-reza-key.pem "selim-reza.test" "*.selim-reza.test"
 
 ## Run docker-compose
 
@@ -26,14 +26,9 @@ traefik-mkcert-nginx-php-docker-compose
 
 ## Urls:
     1. traefik dashboard: http://localhost:8080 
-    2. http :: => http://horloge-nl.test, http://www.horloge-nl.test
-    3. https :: => https://horloge-nl.test, https://www.horloge-nl.test
+    2. http :: => http://selim-reza.test, http://www.selim-reza.test
+    3. https :: => https://selim-reza.test, https://www.selim-reza.test
 
 
 ## Enjoy using SSL in local environment !
-
-
-## References Gist:
-    1. https://gist.github.com/selimppc/23320f76dfe35e1061add8aab4811abc
-    2. https://gist.github.com/selimppc/1507efc5e611e9f56f36f96fc6bd76ff
 

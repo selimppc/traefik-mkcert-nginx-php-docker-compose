@@ -34,9 +34,9 @@ services:
     networks:
       - traefik
     labels:
-      - traefik.http.routers.nginx.rule=Host(`horloge-nl.test`, `www.horloge-nl.test`)
+      - traefik.http.routers.nginx.rule=Host(`selim-reza.test`, `www.selim-reza.test`)
       - traefik.http.routers.nginx.entrypoints=web
-      - traefik.http.routers.nginx-secure.rule=Host(`horloge-nl.test`, `www.horloge-nl.test`)
+      - traefik.http.routers.nginx-secure.rule=Host(`selim-reza.test`, `www.selim-reza.test`)
       - traefik.http.routers.nginx-secure.entrypoints=websecure
       - traefik.http.routers.nginx-secure.tls=true
     healthcheck:
@@ -44,21 +44,6 @@ services:
       interval: 10s
       timeout: 5s
       retries: 3
-
-  redis:
-    image: redis:6.2.5-alpine
-    ports:
-      - "6379:6379"
-    networks:
-      - traefik
-      - internal
-
-  meilisearch:
-    image: getmeili/meilisearch:latest
-    networks:
-      - internal
-    volumes:
-      - meili-data:/data.ms
 
   traefik:
     image: traefik:v2.10.7
