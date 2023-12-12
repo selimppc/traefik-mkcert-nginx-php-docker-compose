@@ -20,6 +20,12 @@
     $ mkdir -p certs
     $ mkcert -cert-file certs/selim-reza-cert.pem -key-file certs/selim-reza-key.pem "selim-reza.test" "*.selim-reza.test"
 
+## Set your local domain name in /ect/hosts
+
+    127.0.0.1 selim-reza.test
+    127.0.0.1 www.selim-reza.test
+
+
 ## Run docker-compose
 
     Run docker containers
