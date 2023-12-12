@@ -1,5 +1,5 @@
-# traefik-mkcert-nginx-php-docker-compose
-traefik-mkcert-nginx-php-docker-compose
+# Traefik mkcert nginx php on docker-compose
+
 
 # Goal 
     Run application using
@@ -7,11 +7,12 @@ traefik-mkcert-nginx-php-docker-compose
     * mkcert
     * nginx
     * php8.1
-    * others if needed
+
 
 ## Pre Requisite 
 
     1. mkcert in local machine 
+    ( Installation process are given here -> https://github.com/FiloSottile/mkcert )
 
 ## Installation
 
@@ -32,3 +33,7 @@ traefik-mkcert-nginx-php-docker-compose
 
 ## Enjoy using SSL in local environment !
 
+
+### Reference:
+    1. https://doc.traefik.io/traefik/providers/docker/
+    2. https://github.com/FiloSottile/mkcert
